@@ -1,0 +1,230 @@
+/*Configs*/
+@text_color: #888;
+@active_color: #222;
+@font_headers: 'Roboto', sans-serif;
+@font_text: 'Arial Narrow', sans-serif;
+
+
+
+/*Base*/
+
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.container {
+	padding: 0 5%;
+	
+}
+
+h1{
+	color: @active_color;
+	font-family: @font_headers;
+	font-size: 2.5rem;
+}
+
+h3{
+	font-family: @font_headers;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+p, li{
+	color: @text_color;
+	font-family: @font_text;
+}
+a{
+	color: inherit;
+}
+hr{
+	border-color: @active_color;
+}
+
+/*Layot*/
+.navbar{
+	border-bottom: 1px solid #ccc;
+	padding: 1% 2%;
+}
+
+.breadcrumb{
+	text-align: center;
+	background-color: #fff;
+	
+}
+
+a.breadcrumb{
+		text-decoration: none;
+		color: @active_color;
+
+
+}
+
+section{
+	padding: 0 6%;
+}
+
+.goods_details{
+
+	a:hover,a:link, a:visited{
+		color: @text_color;
+	}
+
+	span{
+		color: @text_color;
+	}
+
+}
+.size{
+	li{
+		padding: 7px ;
+		
+	}
+}
+
+
+
+ .quantity{
+	height: 45px;
+}
+.btn-primary.active.add{
+	font-family: @font_headers;
+	font-size: 1.8rem;
+	font-weight: bold;
+	background-color: @active_color;
+	border-color: @active_color;
+	color: #fff;
+	box-shadow: none;
+}
+.btn-primary.active.add:hover{
+	color: @active_color;
+	background-color: #fff;
+	border-color: @active_color;
+}
+
+.btn-default{
+	border-color: transparent;
+	color: @text_color;
+	font-family: @font_text;
+	font-size: 1.5rem;
+	
+}
+.btn-default:hover{
+	background-color: transparent;
+	border: none;
+	
+}
+
+.details span{
+	color: #ccc;
+}
+
+.bottom, footer{
+	background-color: #F5F5F5;
+}
+
+footer{
+	padding: 4% 2%;
+}
+
+
+p.store{
+    border-right: 1px solid @text_color;
+    padding-right: 10px;
+
+}
+.link_page{
+	padding-right: 0;
+	padding-left: 5px;
+	
+}
+.link_locator{
+	padding-right: 0;
+}
+
+
+.terms li:not(:last-child){
+    border-right: 1px solid @text_color;
+
+}
+a.underline{
+	text-decoration: underline;
+}
+
+a.underline:hover{
+	
+	text-decoration: none;
+	color: @text_color;
+}
+
+a.line_none:hover{
+	text-decoration: none;
+	color: @active_color;
+}
+
+/*Modules*/
+.search{
+	border: none;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: transparent;
+	
+
+}
+
+a.line{
+color: @active_color;
+}
+a.line:hover{
+	text-decoration: underline;
+	color: @active_color;
+}
+
+
+.goods img{
+	width: 30%;
+	padding: 4px 2px;
+}
+
+.info_block{
+	padding-top: 20px;
+}
+
+.articles a:hover{
+	color: @text_color;
+
+}
+.email{
+	margin-bottom: 3px;
+}
+.form-control, .btn{
+	border-radius: 0;
+}
+
+.btn-primary.active.submit{
+	font-family: @font_headers;
+	font-size: 1.4rem;
+	font-weight: bold;
+	background-color: @active_color;
+	border-color: @active_color;
+	color: #fff;
+	box-shadow: none;
+	
+}
+.select, .accept{
+	padding-right: 0;
+	padding-left: 0;
+}
+.accept{
+	padding-left: 4px;
+}
+.fa-map-marker{
+	position: absolute;
+	left: -2px;
+}
+a.social:hover{
+	opacity: 0.5;
+}
+
+
+
+	

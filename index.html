@@ -6,43 +6,50 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
     <meta name="description" content="description text">
     <meta name="keywords" content="keywords text">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
     
 </head>
 <body>
 <header>
 	<div class="row navbar">
 		<div class="col-md-4">
-			<a href="#"><img src="images/logo.png"></a>
+			<a href="#" alt="" title=""><img src="images/logo.png" alt="" title=""></a>
 		</div>
 		<div class="col-md-4">
 			<nav>
 				<ul class="nav nav-pills">
-					<li><a class="line_none" href="#">Women</a></li>
-					<li><a class="line_none" href="#">Men</a></li>
-					<li><a class="line_none" href="#">Home & Gifts</a></li>
-					<li><a class="line_none" href="#">Sale</a></li>
-					<li><a class="line_none" href="#">Blog</a></li>
+					<li><a class="line_none" href="#" alt="" title="">Women</a></li>
+					<li><a class="line_none" href="#" alt="" title="">Men</a></li>
+					<li><a class="line_none" href="#" alt="" title="">Home & Gifts</a></li>
+					<li><a class="line_none" href="#" alt="" title="">Sale</a></li>
+					<li><a class="line_none" href="#" alt="" title="">Blog</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="col-md-4">
 			<div class="row controls">
 				<div class="col-md-4">
-    				<div class="search">
-        				<input type="search" class="form-control"/>
-        				<i class="fa fa-search"></i>
+					<div class="input-group search">
+      					<input type="text" class="form-control search" placeholder="Search">
+    					<span class="input-group-btn">
+        				<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+      					</span>
     				</div>
-				</div>
+    			</div>
 				<div class="col-md-4">
     				<div class="sign_in">
-    					<a href="#">Sign in</a>
+    					<button type="button" class="btn btn-sign-in">Sign in</button>
     				</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-1">
     				<div class="basket">
     					<i class="fa fa-shopping-bag"></i>
     	   			</div>
@@ -53,110 +60,112 @@
 	<div class="container">
 		<div class="sub_navbar">
 			<ul class="nav nav-pills">
-				<li><a class="line" href="#">New</a></li>
-				<li><a class="line" href="#">Dresses</a></li>
-				<li><a class="line" href="#">Tops</a></li>
-				<li><a class="line" href="#">Jackets</a></li>
-				<li><a class="line" href="#">Bottoms</a></li>
-				<li><a class="line" href="#">Sportswear</a></li>
-				<li><a class="line" href="#">Lingerie</a></li>
-				<li><a class="line" href="#">Sweemwear</a></li>
-				<li><a class="line" href="#">Beauty</a></li>
-				<li><a class="line" href="#">Accessories</a></li>
-				<li><a class="line" href="#">Shoes</a></li>
-				<li><a class="line" href="#">Vintage</a></li>
-				<li><a class="line" href="#">Collections</a></li>
-				<li><a class="line" href="#">Brands</a></li>
+				<li><a class="line" href="#" alt="" title="">New</a></li>
+				<li><a class="line" href="#" alt="" title="">Dresses</a></li>
+				<li><a class="line" href="#" alt="" title="">Tops</a></li>
+				<li><a class="line" href="#" alt="" title="">Jackets</a></li>
+				<li><a class="line" href="#" alt="" title="">Bottoms</a></li>
+				<li><a class="line" href="#" alt="" title="">Sportswear</a></li>
+				<li><a class="line" href="#" alt="" title="">Lingerie</a></li>
+				<li><a class="line" href="#" alt="" title="">Sweemwear</a></li>
+				<li><a class="line" href="#" alt="" title="">Beauty</a></li>
+				<li><a class="line" href="#" alt="" title="">Accessories</a></li>
+				<li><a class="line" href="#" alt="" title="">Shoes</a></li>
+				<li><a class="line" href="#" alt="" title="">Vintage</a></li>
+				<li><a class="line" href="#" alt="" title="">Collections</a></li>
+				<li><a class="line" href="#" alt="" title="">Brands</a></li>
 			</ul>
 		</div>
 	</div>
 </header>
 <section>
 	<ol class="breadcrumb">
-		<li><a class="breadcrumb" href="#">Women</a></li>
-		<li><a class="breadcrumb" href="#">Bottoms</a></li>
+		<li><a class="breadcrumb" href="#" alt="" title="">Women</a></li>
+		<li><a class="breadcrumb" href="#" alt="" title="">Bottoms</a></li>
 	</ol>
 	<div class="row">
 		<div class="col-md-7 goods">
-			<img src="images/skirt1.jpg" alt="" title="">
-			<img src="images/skirt2.jpg" alt="" title="">
-			<img src="images/skirt2.jpg" alt="" title="">
-			<img src="images/skirt4.jpg" alt="" title="">
-			<img src="images/skirt5.jpg" alt="" title="">
-			<img src="images/skirt6.jpg" alt="" title="">
+		<!-- generating images by js -->
 		</div>
 		<div class="col-md-4 goods_details">
-			<h1>Urban outfitters twill a-line skirt<br>
-			<i class="fa fa-gbp"></i>39</h1>
-			<a href="#"><u>See all cooperative by urban outfitters</u></a>
+			<h1>
+			<span class="product-name">Urban outfitters twill a-line skirt</span>
+			<br>
+			<span class="product-price"> &pound; 39</span>
+			<span class="discount-price"><!-- show price by js --></span>
+			</h1>
+			<a href="#" alt="" title=""><u>See all cooperative by urban outfitters</u></a>
 			<div class="row">
-				<div class="col-md-4 color">
-					<h3>Color:<span> taupe</span></h3>
-					<label class="radio-inline">
-  						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
-					</label>
-					<label class="radio-inline">
-  						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-					</label>
-					<label class="radio-inline">
-  						<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-					</label>
+				<div class="col-md-4 color-block">
+					<h3>Color:<span class="color_name"><!-- show color name by js--></span></h3>
+					<div class="color-selector-parent"><!-- generated colors by js-->
+					<!--<div class="color_selector" data-id="1"><div style="background-color:#000;"></div></div>-->
+					</div>
 				</div>
 				<div class="col-md-8">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 size">
+				<div class="col-md-4 sizes">
 					<h3>Size</h3>
-					<a class="underline" href="#">Size chart</a>
+					<a class="underline" href="#" alt="" title="">Size chart</a>
 					<ul class="list-inline">
-						<li>XS</li>
-						<li>S</li>
-						<li>M</li>
-						<li>L</li>
+						<li data-size="xs">XS</li>
+						<li data-size="s">S</li>
+						<li data-size="m">M</li>
+						<li data-size="l">L</li>
 					</ul>
 				</div>
 				<div class="col-md-8">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 quantity">
-					<select class="form-control quantity">
-  						<option>Qty:1</option>
- 						<option>Qty:2</option>
-  						<option>Qty:3</option>
-  						<option>Qty:4</option>
-  						<option>Qty:5</option>
+				<div class="col-md-4 quantity_selector">
+					<select class="form-control quantity" name="quantity">
+  						<option value="1">Qty:1</option>
+ 						<option value="2">Qty:2</option>
+  						<option value="3">Qty:3</option>
+  						<option value="4">Qty:4</option>
+  						<option value="5">Qty:5</option>
 					</select>
 				</div>
 				<div class="col-md-8 add">
-					<button type="button" class="btn btn-primary btn-lg btn-block active add">Add to bag</button>
+					<button type="button" class="btn btn-primary btn-lg btn-block active add add_to_cart">Add to bag</button>
 					<button type="button" class="btn btn-default btn-lg btn-block"><u>Add to wish list</u></button>					
 				</div>
 			</div>
 			<hr>
 			<div class="details">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapse-up" alt="" title="">
+					<i class="fa fa-chevron-up"></i>
+				</a>
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapse-down" alt="" title="">
+					<i class="fa fa-chevron-down"></i>
+				</a>
 				<h3>Details</h3>
-				<i class="fa fa-chevron-up"></i>
-				<p><span>Product sku: 786950372519</span></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet</p>
-				<h3 class="text-uppercase">Things to know:</h3>
-				<ul>
-					<li>Mixed fibres</li>
-					<li>Machine wash</li>
-				</ul>
-				<h3 class="text-uppercase">Size & Fit:</h3>
-				<ul>
-					<li>Model wears: Small</li>
-					<li>Model height: 170cm/5.7"</li>
-				</ul>
+				<div id="collapseOne" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p><span>Product sku: 786950372519</span></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet</p>
+						<h3 class="text-uppercase">Things to know:</h3>
+						<ul>
+							<li>Mixed fibres</li>
+							<li>Machine wash</li>
+						</ul>
+						<h3 class="text-uppercase">Size & Fit:</h3>
+						<ul>
+							<li>Model wears: Small</li>
+							<li>Model height: 170cm/5.7"</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<hr>
 		</div>
-		<div class="col-md-1 social_icons">
-			<i class="fa fa-facebook-square"></i>
-			<i class="fa fa-twitter-square"></i>
-			<i class="fa fa-pinterest"></i>
+		<div class="col-md-1">
+			<a class="social" href="#" alt="" title=""><i class="fa fa-facebook-square icons-bg"></i></a>
+			<a class="social" href="#" alt="" title=""><i class="fa fa-twitter-square icons-bg"></i></a>
+			<a class="social" href="#" alt="" title=""><i class="fa fa-pinterest icons-bg"></i></a>
 		</div>
 	</div>
 </section>
@@ -165,20 +174,20 @@
 		<div class="row info_block">
 			<div class="col-md-3 articles">
 				<ul class="list-unstyled">
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Order status</a></li>
-					<li><a href="#">Payment</a></li>
-					<li><a href="#">Delivery</a></li>
-					<li><a href="#">Cansellation & Returns</a></li>
+					<li><a href="#" alt="" title="">Help</a></li>
+					<li><a href="#" alt="" title="">Order status</a></li>
+					<li><a href="#" alt="" title="">Payment</a></li>
+					<li><a href="#" alt="" title="">Delivery</a></li>
+					<li><a href="#" alt="" title="">Cansellation & Returns</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 articles">
 				<ul class="list-unstyled">
-					<li><a href="#">Gift cards</a></li>
-					<li><a href="#">Cookies</a></li>
-					<li><a href="#">Work & Urban</a></li>
-					<li><a href="#">Student discount</a></li>
-					<li><a href="#">Shop North America</a></li>
+					<li><a href="#" alt="" title="">Gift cards</a></li>
+					<li><a href="#" alt="" title="">Cookies</a></li>
+					<li><a href="#" alt="" title="">Work & Urban</a></li>
+					<li><a href="#" alt="" title="">Student discount</a></li>
+					<li><a href="#" alt="" title="">Shop North America</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3">
@@ -197,7 +206,7 @@
   					</div>
   				</div>
   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua</p>
-  				<p>You may <a class="underline" href="#">unsubscribe</a> at any time</p>
+  				<p>You may <a class="underline" href="#" alt="" title="">unsubscribe</a> at any time</p>
   			</div>
 			<div class="col-md-2 col-md-offset-1">
 			<div class="adress">
@@ -208,21 +217,21 @@
 				Today's hours 11:00 - 20:00</p>
 				<div class="row store">
 					<div class="col-md-6 link_page">
-						<p class="store"><a class="underline" href="#">View store page</a></p>
+						<p class="store"><a class="underline" href="#" alt="" title="">View store page</a></p>
 					</div>
 					<div class="col-md-6 link_locator">
-						<p><a class="underline" href="#">Store locator</a></p>					
+						<p><a class="underline" href="#" alt="" title="">Store locator</a></p>					
 					</div>
 				</div>
 				<h3>Follow us</h3>
-				<a class="social" href="#"><i class="fa fa-facebook-square"></i></a>
-				<a class="social" href="#"><i class="fa fa-twitter-square"></i></a>
-				<a class="social" href="#"><i class="fa fa-pinterest"></i></a>
-				<a class="social" href="#"><i class="fa fa-facebook-square"></i></a>
-				<a class="social" href="#"><i class="fa fa-twitter-square"></i></a>
-				<a class="social" href="#"><i class="fa fa-pinterest"></i></a>
-				<a class="social" href="#"><i class="fa fa-facebook-square"></i></a>
-				<a class="social" href="#"><i class="fa fa-twitter-square"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-facebook-square"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-twitter-square"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-pinterest"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-facebook-square"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-twitter-square"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-pinterest"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-facebook-square"></i></a>
+				<a class="social" href="#" alt="" title=""><i class="fa fa-twitter-square"></i></a>
 			</div>
 		</div>
 	</div>
@@ -231,9 +240,9 @@
 	<div class="row terms">
 		<div class="col-md-6">
 			<ul class="list-inline">
-				<li><a class="line_none" href="#"><small>Privacy Policy</small></a></li>
-				<li><a class="line_none" href="#"><small>Terms of use</small></a></li>
-				<li><a class="line_none" href="#"><small>URBN.com</small></a></li>
+				<li><a class="line_none" href="#" alt="" title=""><small>Privacy Policy</small></a></li>
+				<li><a class="line_none" href="#" alt="" title=""><small>Terms of use</small></a></li>
+				<li><a class="line_none" href="#" alt="" title=""><small>URBN.com</small></a></li>
 			</ul>	
 		</div>
 		<div class="col-md-6">
@@ -241,8 +250,25 @@
 		</div>
 	</div>
 </footer>
-
+<div class="shopping-cart">
+	<div class="shopping-cart-heading">
+		<a class="close-shopping-cart" href="#" alt="" title="">X</a>
+  		<h4></h4>
+ 	</div>
+	<h3></h3>
+	<ul>
+		<li class="chosen-product-img"></li>
+		<li>Price: <span class="chosen-product-price"></span></li>
+		<li>Quantity: <span class="chosen-product-quantity"></span></li>
+		<li>Color: <span class="chosen-product-color"></span></li>
+		<li>Size: <span class="chosen-product-size"></span></li>
+		<li class="btn btn-remove">Remove</li>
+	</ul>
+</div>
+<a href="#0" class="cd-top" alt="" title="">Top</a>
 </body>
 </html>
+
+
 
 

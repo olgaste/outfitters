@@ -125,22 +125,16 @@ $(document).ready(function() {
         var shopping_cart = $('.shopping-cart');
         shopping_cart.find('h3').html($('.product-name').html());
         
-            if(chosen_products.length == 1) {
+        var ul = shopping_cart.find('ul').first().clone().show();
+        var chosen_product_img = $('.goods img').first().clone();
 
-            var chosen_product_img = $('.goods img').first().clone();
-            shopping_cart.find('.chosen-product-img').append(chosen_product_img);
-            shopping_cart.find('.chosen-product-price').html(chosen_product.price);
-            shopping_cart.find('.chosen-product-quantity').html(chosen_product.quantity);
-            shopping_cart.find('.chosen-product-color').html(chosen_product.color);
-            shopping_cart.find('.chosen-product-size').html(chosen_product.size);
-        } else {
-            var ul = shopping_cart.find('ul').first().clone();
-            ul.find('.chosen-product-price').html(chosen_product.price);
-            ul.find('.chosen-product-quantity').html(chosen_product.quantity);
-            ul.find('.chosen-product-color').html(chosen_product.color);
-            ul.find('.chosen-product-size').html(chosen_product.size);
-            shopping_cart.append(ul);
-        }
+        ul.find('.chosen-product-img').append(chosen_product_img);
+        ul.find('.chosen-product-price').html(chosen_product.price);
+        ul.find('.chosen-product-quantity').html(chosen_product.quantity);
+        ul.find('.chosen-product-color').html(chosen_product.color);
+        ul.find('.chosen-product-size').html(chosen_product.size);
+        ul.removeClass('ul');
+        shopping_cart.append(ul);
         
         total_quantity = parseInt(chosen_product.quantity) + total_quantity;
         if(total_quantity == 1) {
@@ -161,7 +155,7 @@ $(document).ready(function() {
     });
 
     //Items removing
-    $('.shopping-cart').on('click', '.btn-remove', function(){
+    $('.shopping-cart').on('click', '.btn-remove',function(){
         var deleted_quantity = $(this).parent().find('.chosen-product-quantity').html()
         total_quantity = total_quantity - parseInt(deleted_quantity);
         if(total_quantity == 1) {
